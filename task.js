@@ -1,15 +1,6 @@
-let names = [
-    "marzouk",
-    "karan",
-    "niyas",
-    "thariq",
-    "rashed",
-    "niyas",
-    "marzouk",
-  ];
-  
+let myArray1 = ["marzouk", "niyas", "thariq"];
+let myArray2 = ["marzouk", "niyas", "rashed", "azkar"];
 
-  let unique_names = [new Set(names)];
-  
-  
-  console.log(unique_names);
+let myFinalArray = [...new Set([...myArray1 ,...myArray2])]; 
+
+console.log(myFinalArray);
